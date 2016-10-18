@@ -1,5 +1,5 @@
 
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -10,12 +10,15 @@ app = Flask(__name__)
 @app.route("/hello/<name>")
 def hello(name=None):
     if name != None:
-        return 'Hello {}'.format(Name)
-    return 'Hello World'
+        headline = 'Hello {}'.format(name)
+    else:
+        headline = 'Hello World'
+    return render_template('hello.html', headline=headline)
 
 @app.route("/")
-def index():
-    return 'Index page'
+@app.route("/set/<action>")
+def index(action=None):
+    return render_template('index.html', action=action)
 
 ##
 # main for simple testing

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Du bist nicht angemeldet!{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Du kommst hier net rein!</h1>
+    <p class="important">
+      Hey, wer bist Du!!! {{ error }}
+    </p>
+{% endblock %}
