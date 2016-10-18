@@ -44,4 +44,17 @@ if __name__ == "__main__":
 
 ~~~~~
 
+Zuerst importiert das Skript die Flask-Klasse, anschließend erzeugt es
+eine Instanz (app) dieser Klasse.  Das erste Argument dieses Aufrufs
+setzt den Namen der Instanz - hier __name__. Über diese Bezeichnung findet
+Flask weitere Dateien - etwas Templates. Dazu später mehr.
+
+Die Zeile `@app.route(...` ist eine Decorator, mit dem man dem Skript
+vorgibt, über welche URL die nachfolgenen Anweisungen aufgerufen werden.
+
+Im Beispiel ist das die Funktion *hello*, die den String "Hello World" an die
+Flask-App zurückgibt.
+
+**Speichere dieses Beispiel nicht unter dem Namen flask.py**
+
 
