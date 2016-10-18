@@ -1,0 +1,68 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+\title[Flask] % (optional, only for long titles)
+{Flask Microframework}
+\subtitle{für Eilige}
+\author[Kaps] % (optional, for multiple authors)
+{Reik(o) Kaps}
+
+\date[2016] % (optional)
+{Python User Group Hannover 2016}
+\subject{Python}
+
+\begin{document}
+\frame{\titlepage}
+  \begin{frame}
+    \frametitle{Flask für Eilige}
+    \textbf{\url{http://flask.pocoo.org/}}
+    \begin{itemize}
+    \item Entwicklungsserver und Debugger
+    \item Unit-Test-Unterstützung
+    \item Jinja2 Templates
+    \item Secure Cookies
+    \item 100\% WSGI 1.0 kompatibel
+    \item Unicode
+    \item gut dokumentiert
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Installation}
+    \begin{itemize}
+    \item 
+      \textbf{Python 2.7 oder besser 3.x; virtualenv} \\
+      \emph{apt-get install python3 virtualenv}
+    \item
+      Virtuelle Umgebung anlegen ... \\
+      \emph{virtualenv -p /usr/bin/python3 venv}
+    \item
+      Ins Virtualenv wechseln ... \\
+      \emph{. venv/bin/activate}
+    \item
+      Flask innerhalb des Venv installieren ... \\
+      \emph{pip install Flask}
+
+    \item \textbf{Fertig!}
+    \end{itemize}
+
+    %More content goes here
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Sehr einfache Flask-App}
+
+    \lstinputlisting[language=Python]{simple.py}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Vielen Dank}
+    \framesubtitle{für die Aufmerksamkeit!}
+    \includegraphics[scale=0.5]{flask_logo.png} \\
+    \url{https://github.com/reikkaps/pug2_flask}
+  \end{frame}
+    
+% etc
+\end{document}
